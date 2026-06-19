@@ -1,0 +1,37 @@
+groups:
+  - name: "SG-Engineering-Vancouver"
+    description: "Security group for Engineering in Vancouver"
+    type: "security"
+    membership_rule:
+      department: "Engineering"
+      location: "Vancouver"
+  - name: "SG-Finance-Vancouver"
+    description: "Security group for Finance in Vancouver"
+    type: "security"
+    membership_rule:
+      department: "Finance"
+      location: "Vancouver"
+  - name: "SG-Engineering-Toronto"
+    description: "Security group for Engineering in Toronto"
+    type: "security"
+    membership_rule:
+      department: "Engineering"
+      location: "Toronto"
+  - name: "SG-Finance-Toronto"
+    description: "Security group for Finance in Toronto"
+    type: "security"
+    membership_rule:
+      department: "Finance"
+      location: "Toronto"
+  - name: "SG-Engineering-Admins"
+    description: "Security group for Engineering Admins"
+    type: "security-group"
+    membership_rule:
+      department: "Engineering"
+      role: "Admin"
+  - name: "SG-Finance-Admins"
+    description: "Security group for Finance Admins"
+    type: "security"
+    membership_rule:
+      department: "Finance"
+      role: "Admin"

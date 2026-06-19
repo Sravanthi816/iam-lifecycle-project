@@ -1,0 +1,4 @@
+employee_id,first_name,last_name,email,department,status
+1001,Pradeep,Gulla,pradeep@test.local,Engineering,Active
+1002,John,Smith,john@test.local,Finance,Active
+1003,Alice,Brown,alice@test.local,HR,Active
