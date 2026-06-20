@@ -1,0 +1,4 @@
+pyyaml
+msal
+requests
+python-dotenv
