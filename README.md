@@ -17,15 +17,15 @@ Current implementation focuses on:
 Project Architecture
 
 access-model.yaml
-        ↓
+  ↓
 Python Script
-        ↓
+  ↓
 Microsoft Entra App Registration
-        ↓
+  ↓
 Access Token
-        ↓
+  ↓
 Microsoft Graph API
-        ↓
+  ↓
 Microsoft Entra ID
 
 Project Structure
@@ -72,8 +72,6 @@ Benefits:
 * Infrastructure as Code
 * CI/CD friendly
 
-⸻
-
 Microsoft Entra App Registration
 
 An App Registration was created in Microsoft Entra ID.
@@ -91,8 +89,6 @@ The following values were generated:
 * Client Secret
 
 These credentials are used by Python to obtain an access token.
-
-⸻
 
 Environment Variables
 
@@ -156,7 +152,7 @@ Successful Result
 
 Expected output:
 Groups loaded from access-model.yaml:
-...
+
 Successfully authenticated with Microsoft Graph API.
 
 GitHub Repository
@@ -164,12 +160,12 @@ GitHub Repository
 Source code is stored in GitHub.
 
 main
- └── Production / Stable
+└── Production / Stable
 
 feature/*
- └── Development Branches
+└── Development Branches
 
- Examples:
+Examples:
 feature/read-groups
 feature/group-creation
 feature/jml-workflow
@@ -194,11 +190,11 @@ Pipeline steps:
 
 Workflow result:
 Git Push
-    ↓
+  ↓
 GitHub Actions
-    ↓
+  ↓
 Run test_connection.py
-    ↓
+   ↓
 Authenticate to Microsoft Graph
 
 GitHub Secrets
@@ -215,7 +211,6 @@ Purpose:
 * Avoid storing credentials in source code
 * Support CI/CD automation
 
-⸻
 
 Current Project Status
 
@@ -240,7 +235,6 @@ Next Steps:
 * Integrate AWS role mappings
 * Extend CI/CD deployment process
 
-⸻
 
 Learning Objectives
 
