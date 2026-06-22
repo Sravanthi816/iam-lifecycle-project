@@ -1,0 +1,17 @@
+version: 0.2
+
+env:
+  secrets-manager:
+    TENANT_ID: "ml-automation/entra-credentials:TENANT_ID"
+    CLIENT_ID: "ml-automation/entra-credentials:CLIENT_ID"
+    CLIENT_SECRET: "ml-automation/entra-credentials:CLIENT_SECRET"
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.12
+    commands:
+      - pip install -r requirements.txt
+  build:
+    commands:
+      - python your_script_name.py
