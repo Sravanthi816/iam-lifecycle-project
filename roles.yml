@@ -1,0 +1,21 @@
+roles:
+
+  - name: HR Administrator
+    group: SG-HR-Admins
+    app_role: JML.HRAdmin
+
+  - name: HR Analyst
+    group: SG-HR-Analysts
+    app_role: JML.HRAnalyst
+
+  - name: Manager
+    group: SG-Managers
+    app_role: JML.Manager
+
+  - name: IAM Administrator
+    group: SG-IAM-Admins
+    app_role: JML.IAMAdmin
+
+  - name: Employee
+    group: SG-Employees
+    app_role: JML.Employee
