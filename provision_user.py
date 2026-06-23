@@ -10,7 +10,7 @@ CLIENT_SECRET = os.environ["CLIENT_SECRET"]
 
 # (department, title) -> which group's Object ID they should be added to
 GROUP_RULES = {
-    ("Engineering", "Manager"):     "2b58b8ed-3e21-4e22-b2ff-4ce3637ea057",  # SG-Engineering-Admins
+    ("E ngineering", "Manager"):     "2b58b8ed-3e21-4e22-b2ff-4ce3637ea057",  # SG-Engineering-Admins
     ("Engineering", "Senior Lead"): "2b58b8ed-3e21-4e22-b2ff-4ce3637ea057",  # SG-Engineering-Admins
     ("Engineering", "Junior"):      "25c56245-3a9a-4077-8bca-6ecc289b69f2",  # SG-Engineering-Vancouver
     ("Finance", "Manager"):         "10d0f57b-d720-40d1-93b7-e8ef1bdea92d",  # SG-Finance-Admins
