@@ -10,15 +10,3 @@ apps:
         app_role_id: "afcdbfa7-9d27-4d79-beb9-af30ddabb013" # JML.Admin
       - group_id: "fb37b0cb-35b8-4c90-85c4-360221ded16a"   # SG-Finance-Vancouver
         app_role_id: "70efe0a5-36f5-413f-a812-463384b0d139" # JML.Viewer
-
-
-
-cat << EOF > employees.csv
-
-employee_id,first_name,last_name,email,department,title,location,status
-2001,Sarah,Lee,sarah.lee@owncompany526.onmicrosoft.com,Engineering,Manager,Vancouver,Active
-2002,Tom,Garcia,tom.garcia@owncompany526.onmicrosoft.com,Engineering,Senior Lead,Vancouver,Active
-2003,Maria,Chen,maria.chen@owncompany526.onmicrosoft.com,Engineering,Junior,Toronto,Active
-2004,Robert,Patel,robert.patel@owncompany526.onmicrosoft.com,Finance,Manager,Vancouver,Active
-2005,Lisa,Kim,lisa.kim@owncompany526.onmicrosoft.com,Finance,Junior,Vancouver,Active
-eof
