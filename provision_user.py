@@ -124,6 +124,34 @@ def provision_user(token, user_id, department, title):
             group_id,
         )
 
+def create_user(token, first_name, last_name, email):
+    headers = {"Authorization": f"Bearer {token}", "Content-Type": "application/json"}
+    url = "https://graph.microsoft.com/v1.0/users"
+    mail_nickname = email.split("@")[0]
+
+    body = {
+        "accountEnabled": True,
+        "displayName": f"{first_name} {last_name}",
+        "mailNickname": mail_nickname,
+        "userPrincipalName": email,
+        "passwordProfile": {
+            "forceChangePasswordNextSignIn": True,
+            "password": "TempPass!2026"
+        }
+    }
+
+    resp = requests.post(url, headers=headers, json=body)
+    if resp.status_code == 201:
+        print(f"[SUCCESS] Created user {email}")
+        return resp.json()["id"]
+    elif resp.status_code == 400 and "already exists" in resp.text.lower():
+        existing = requests.get(f"https://graph.microsoft.com/v1.0/users/{email}", headers=headers)
+        print(f"[INFO] User already exists: {email}")
+        return existing.json()["id"]
+    else:
+        print(f"[ERROR] {resp.status_code} - {resp.text}")
+        return None
+
 
 if __name__ == "__main__":
 

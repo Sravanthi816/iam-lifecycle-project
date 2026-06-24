@@ -1,4 +1,6 @@
 employee_id,first_name,last_name,email,department,title,location,status
-1001,John,Smith,john@test.local,Engineering,Manager,Vancouver,Active
-1002,Alice,Brown,alice@test.local,Finance,Analyst,Vancouver,Active
-1003,David,Wilson,david@test.local,Engineering,Developer,Toronto,Active
+2001,Sarah,Lee,sarah.lee@owncompany526.onmicrosoft.com,Engineering,Manager,Vancouver,Active
+2002,Tom,Garcia,tom.garcia@owncompany526.onmicrosoft.com,Engineering,Senior Lead,Vancouver,Active
+2003,Maria,Chen,maria.chen@owncompany526.onmicrosoft.com,Engineering,Junior,Toronto,Active
+2004,Robert,Patel,robert.patel@owncompany526.onmicrosoft.com,Finance,Manager,Vancouver,Active
+2005,Lisa,Kim,lisa.kim@owncompany526.onmicrosoft.com,Finance,Junior,Vancouver,Active
