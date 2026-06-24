@@ -17,3 +17,5 @@ phases:
       - python test_connection.py
       - python assign_app_role.py
       - python provision_user.py
+      - python bulk_provision.py
+      
